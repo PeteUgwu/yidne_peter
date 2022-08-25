@@ -7,18 +7,19 @@
   </head>
 
   <body>
+    <main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form" action="">
-      Name<br />
-      <label id="name-label" for=""></label>
-      <input placeholder="Enter Your Name" type="text" id="name" />
-      <br />
+      
+      <label id="name-label" for="">Name</label><br /><br>
+      <input placeholder="Enter Your Name" type="text" id="name" required />
+      <br /><br>
 
-      <label id="email-label" for=""></label>
+      <label id="email-label" for="">Email</label><br><br>
       <input
         min="4"
         max="10"
@@ -26,13 +27,30 @@
         type="email"
         required
         placeholder="name@rmail.com"
-      />
+      /><br><br>
 
-      <label id="number-label" for=""></label>
-      <input type="number" id="number" name="number" min="14" max="99" />
-      <input type="submit" value="Submit" />
+      <label id="number-label" for="">Age
+        (optional)</label> <br><br>
+      <input type="number" id="number" name="number" min="14" max="99" placeholder="Age"/>
+ <br><br>     
+      <select id="dropdown">
+        <option id ="challengs">Challenges</option>
+        <option id="projects">projects</option>
+      </select>    <br><br>
+        <div id="name">
+          <input type="radio" value="name" name="name">Definitely
+         <br><input type="radio" value="name" name ="name">Maybe
+        </div><br>
+        
+      <input type="checkbox" value="name" name="name">Peter
+      <input type="checkbox" value="name" name="name">yidne<br>
+      <br>
+      <textarea>Text area!</textarea>  
+         
+      <button id="submit"></button>
     </form>
 
     <script src="js/index.js"></script>
+  </main>
   </body>
 </html>
